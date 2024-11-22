@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Venta de Artículos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="javas.js"></script>
+</head>
+<body>
+  <!-- Cabecera con navegación -->
+  <header class="encabezado">
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="https://web.facebook.com/groups/1910090482816058/posts/d41d8cd9/1910112856147154?locale=es_LA">Quienes somos</a></li>
+        <li><a href="https://web.facebook.com/groups/1910090482816058/posts/d41d8cd9/1910114266147013?locale=es_LA">Acerca de</a></li>
+        <li><a href="https://web.facebook.com/share/g/12JyRsAatiN/">Contacto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Modal -->
+<div id="modal-carrito" class="modal">
+  <div class="modal-content">
+    <h1>Por el momento, esta función sigue en desarrollo</h1>
+    <img src="imagen-en-desarrollo.jpg" alt="Imagen en desarrollo">
+  </div>
+</div>
+  <main class="seccion-productos">
+    <!-- Producto 1 -->
+    <div class="tarjeta-producto">
+      <img src="id3.jpg" alt="Producto 1">
+      <h2>Producto 1</h2>
+      <p>Descripción del producto 1</p>
+      <p class="precio-producto">$19.99</p>
+       <button class="boton-comprar" data-producto-id="1" onclick="agregarAlCarrito(this.getAttribute('data-producto-id'))">Añadir al carrito</button>
+      <!-- Icono del carrito -->
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="tarjeta-producto">
+      <img src="id1.jpg" alt="Producto 2">
+      <h2>Producto 2</h2>
+      <p>Descripción del producto 2</p>
+      <p class="precio-producto">$29.99</p>
+      <button class="boton-comprar" data-producto-id="2" onclick="agregarAlCarrito(this.getAttribute('data-producto-id'))">Añadir al carrito</button>
+      <!-- Icono del carrito -->
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="tarjeta-producto">
+      <img src="id2.jpg" alt="Producto 3">
+      <h2>Producto 3</h2>
+      <p>Descripción del producto 3</p>
+      <p class="precio-producto">$39.99</p>
+      <button class="boton-comprar" data-producto-id="3" onclick="agregarAlCarrito(this.getAttribute('data-producto-id'))">Añadir al carrito</button>
+      <!-- Icono del carrito -->
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </main>
+
+  <footer class="pie-pagina">
+    <h2>Redes sociales</h2>
+    <ul>
+      <li><a href="https://web.facebook.com/groups/1910090482816058" target="_blank"><img src="f.png" alt="Facebook"></a></li>
+      <li><a href="https://web.Twitter.com/camiones" target="_blank"><img src="t.png" alt="Twitter"></a></li>
+      <li><a href="https://www.instagram.com/nosper_00/" target="_blank"><img src="i.png" alt="Instagram"></a></li>
+    </ul>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1347.7748276532895!2d-99.52897828295617!3d17.166178988427266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1729788718143!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+</body>
+</html>
